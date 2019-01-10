@@ -1,0 +1,56 @@
+@import "education.css";
+@import "experience.css";
+@import "hobby.css";
+
+header {
+    background-color: rgb(170, 170, 170);
+    padding: 10px;
+    text-align: center;
+}
+
+header a {
+    float: right;
+    margin: 1px;
+}
+
+nav {
+    background-color: rgb(56, 52, 52);
+    padding: 10px;
+}
+
+nav a {
+    color: rgb(223, 219, 219);
+    font: bold 13px Georgia, serif;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: rgb(223, 223, 223);
+    color: black;
+}
+
+section {
+    background-color:rgb(226, 224, 222);
+    font-family: sans-serif;
+    line-height: 2;
+    padding: 20px;
+    text-align: justify;
+}
+
+.row {
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.col-9 h5 {
+    padding-top: 15px;
+}
+
+footer {
+    background-color: rgb(170, 170, 170);
+    padding: 10px;
+    text-align: center;
+}
+

@@ -1,0 +1,135 @@
+section h3 {
+  padding: 10px;
+}
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+  }
+  
+  .clearfix::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  .slider {
+    position: relative;
+    width: 100%;
+  }
+  
+  .slides {
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slide {
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.4s ease-out
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .slide-image {
+    display: block;
+    width: 100%;
+  }
+
+  .slide.text {
+    color: white;
+  }
+  
+  .dots{
+    text-align: center;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 5px 4px;
+    background-color: rgb(141, 141, 141);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.4s ease;
+  }
+  
+  .dot:hover {
+    background-color: #555555;
+  }
+  
+  .dot.active {
+    border: 2px solid rgb(27, 151, 182);
+  }
+  
+  .thumbnails {
+    margin: 20px;
+  }
+  
+  .thumbnail {
+    float: left;
+    margin-right: 20px;
+    opacity: 0.25;
+    width: 130px;
+    transition: opacity 0.4s ease-out;
+  }
+  
+  .thumbnail:hover {
+    opacity: 0.7;
+  }
+  
+  .thumbnail.active {
+    opacity: 1;
+  }
+  
+  .thumbnail-image {
+    display: block;
+    width: 100%;
+  }
+  
+  .nav-arrow {
+    border-style: solid;
+    border-color: transparent;
+    border-width: 25px;
+    height: 0;
+    width: 0;
+    opacity: 0.5;
+    overflow: hidden;
+    text-indent: -9999px;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity 0.4s ease-out;
+  }
+  
+  .slider:hover .nav-arrow {
+    opacity: 1;
+  }
+  
+  .nav-left {
+    border-right-color: rgb(226, 224, 222);
+    border-left-width: 0;
+    border-right-width: 40px;
+    left: 20px;
+  }
+  
+  .nav-right {
+    border-left-color: rgb(226, 224, 222);
+    border-right-width: 0;
+    border-left-width: 40px;
+    right: 20px;
+  }
+
+  nav.thumbnails {
+      background-color: rgb(226, 224, 222);
+  }
+  
+  
